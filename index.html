@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Gina</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="js/script.js"></script>
+</head>
+
+<body class="font-sans bg-white text-[#272B52]">
+  <header class="flex justify-between items-center p-4 bg-[#5D3939] text-white">
+    <div class="h-16 w-16 bg-[#71770B] rounded-full"></div>
+    <nav class="space-x-2">
+      <a class="border border-white px-3 py-1 rounded hover:bg-white hover:text-[#5D3939]" href="#home-page">Home</a>
+      <a class="border border-white px-3 py-1 rounded hover:bg-white hover:text-[#5D3939]" href="#our-profile">Our Profile</a>
+      <a class="border border-white px-3 py-1 rounded hover:bg-white hover:text-[#5D3939]" href="#msg-us">Message Us</a>
+    </nav>
+  </header>
+
+  <main class="p-6">
+    <section id="home-page" class="mb-20">
+      <header>
+        <h1 class="text-2xl font-bold mb-4">Hi <span id="welcome-user" class="text-[#71770B]">Gina</span>, Welcome to my first portfolio web</h1>
+      </header>
+      <div>
+        <p class="mb-4 text-[#5D3939]">Ini adalah website portfolio pertamaQyuuu</p>
+        <img src="./image.png" class="w-full rounded shadow-md" alt="banner" />
+      </div>
+      <hr class="my-8 border-[#71770B]">
+    </section>
+
+    <section id="our-profile" class="mb-10">
+      <div class="flex flex-col md:flex-row gap-6 items-center">
+        <div class="md:w-1/2 space-y-4">
+          <h1 class="text-2xl font-bold">Hello, I'm Gina!</h1>
+          <p class="text-[#5D3939]">
+            I'm an Information System student with a strong interest in the field of visual and website design. I have also gained experience in interaction design and visual design on several occasions and always want to continue developing my skills in these areas. I’m an adaptive individual who is capable of working in both individual and team environments. A flexible person who is great at time management, with a high sense of responsibility, remains focused and organized under tight deadlines.
+          </p>
+        </div>
+        <div class="md:w-1/2">
+          <img src="./Group 4.png" alt="my photo" >
+        </div>
+      </div>
+      <hr class="my-8 border-[#71770B]">
+    </section>
+
+    <section id="msg-us" class="mb-10">
+      <h2 class="text-xl font-semibold mb-4">Reach Me Out</h2>
+      <div class="flex flex-col md:flex-row gap-6">
+        <!-- Form -->
+        <form id="form" class="flex flex-col gap-4 max-w-md w-full">
+          <label class="flex flex-col">
+            Nama:
+            <input type="text" id="name" class="border rounded px-2 py-1" placeholder="Nama">
+          </label>
+          <label class="flex flex-col">
+            Tanggal Lahir:
+            <input type="date" id="dob" class="border rounded px-2 py-1">
+          </label>
+          <div>
+            Jenis Kelamin:<br>
+            <label><input type="radio" name="gender" value="Laki-Laki"> Laki-Laki</label>
+            <label class="ml-4"><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+          </div>
+          <label class="flex flex-col">
+            Pesan:
+            <textarea id="messageText" class="border rounded px-2 py-1" placeholder="Pesan"></textarea>
+          </label>
+          <button type="submit" class="bg-[#272B52] text-white px-4 py-2 rounded hover:bg-[#71770B]">Submit</button>
+        </form>
+
+        <!-- Result Area -->
+        <div id="formResult" class="border p-4 w-full md:w-1/2 text-sm whitespace-pre-wrap text-[#5D3939] bg-gray-50 rounded">
+          <p class="text-gray-400">Hasil pengisian akan muncul di sini setelah Submit.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center p-4 border-t text-[#272B52]">
+    <p>Created by Gina</p>
+  </footer>
+</body>
+
+</html>
